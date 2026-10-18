@@ -1,0 +1,55 @@
+# Windows installer (PRD §4, §6.2). Build with: npm run dist
+appId: pk.ayyazpharmacy.manager
+productName: Ayyaz Pharmacy Manager
+copyright: Copyright © 2026 Ayyaz Pharmacy
+
+directories:
+  output: dist
+  buildResources: build
+
+files:
+  - out/**
+  - package.json
+  - '!**/*.map'
+
+# SQL migrations are applied at start-up from resources/migrations.
+extraResources:
+  - from: db/migrations
+    to: migrations
+
+# The SQLite driver ships prebuilt N-API binaries that work in Electron as-is,
+# so no native rebuild (and no Visual Studio) is needed.
+npmRebuild: false
+
+asar: true
+# Native SQLite module must live outside the archive.
+asarUnpack:
+  - node_modules/better-sqlite3/**
+
+# Electron fuses: switch off features this app never needs, so they can't be abused.
+electronFuses:
+  runAsNode: false
+  enableCookieEncryption: true
+  enableNodeOptionsEnvironmentVariable: false
+  enableNodeCliInspectArguments: false
+  enableEmbeddedAsarIntegrityValidation: true
+  onlyLoadAppFromAsar: true
+  grantFileProtocolExtraPrivileges: false
+
+win:
+  icon: build/icon.png
+  target:
+    - target: nsis
+      arch: [x64]
+  # Code signing: set CSC_LINK / CSC_KEY_PASSWORD in the environment once a certificate is bought.
+
+nsis:
+  artifactName: Ayyaz-Pharmacy-Setup-${version}.${ext}
+  oneClick: false
+  perMachine: false
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: always
+  createStartMenuShortcut: true
+  shortcutName: Ayyaz Pharmacy
+  # Never delete pharmacy data when the app is uninstalled.
+  deleteAppDataOnUninstall: false

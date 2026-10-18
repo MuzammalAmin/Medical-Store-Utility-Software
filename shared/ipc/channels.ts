@@ -1,0 +1,65 @@
+/**
+ * Plain list of IPC channel names. The preload script imports only this file
+ * (not the Zod contract) so the sandboxed bridge stays tiny. A unit test checks
+ * that it matches the keys of `ipcContract` exactly.
+ */
+export const IPC_CHANNEL_NAMES = [
+  'app:state',
+  'setup:recoveryKey',
+  'setup:saveRecoveryKey',
+  'setup:printRecoveryKey',
+  'setup:complete',
+  'setup:restore',
+  'setup:unlock',
+  'auth:loginUsers',
+  'auth:login',
+  'auth:logout',
+  'auth:changeOwnPin',
+  'settings:get',
+  'settings:update',
+  'users:list',
+  'users:create',
+  'users:update',
+  'users:resetPin',
+  'backup:status',
+  'backup:create',
+  'backup:chooseUsbFolder',
+  'backup:restore',
+  'security:recoveryKey',
+  'dashboard:summary',
+  'items:list',
+  'items:get',
+  'items:save',
+  'items:setActive',
+  'items:alternatives',
+  'inventory:batches',
+  'inventory:addBatch',
+  'inventory:adjust',
+  'pos:search',
+  'pos:items',
+  'pos:checkout',
+  'pos:hold',
+  'pos:heldList',
+  'pos:heldDelete',
+  'sales:list',
+  'sales:get',
+  'sales:void',
+  'returns:lookup',
+  'returns:create',
+  'receipt:html',
+  'receipt:print',
+  'printers:list',
+  'reports:salesSummary',
+  'reports:stock',
+  'reports:export',
+  'import:template',
+  'import:open',
+  'import:preview',
+  'import:commit',
+  'import:errorFile',
+] as const;
+
+export type IpcChannelName = (typeof IPC_CHANNEL_NAMES)[number];
+
+/** Prefix used on the wire so app channels can't collide with Electron internals. */
+export const IPC_PREFIX = 'ayyaz:';

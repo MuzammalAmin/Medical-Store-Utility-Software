@@ -1,0 +1,21 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "lib": ["ES2024"],
+    "types": ["node"],
+    "composite": true,
+    "outDir": "out/.types/node"
+  },
+  "include": [
+    "electron/**/*.ts",
+    "shared/**/*.ts",
+    "scripts/**/*.ts",
+    "tests/**/*.ts",
+    "playwright.config.ts",
+    "electron.vite.config.ts",
+    "drizzle.config.ts",
+    "vitest.config.ts",
+    "eslint.config.js",
+    "lint-staged.config.js"
+  ]
+}

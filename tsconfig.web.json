@@ -1,0 +1,11 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "lib": ["ES2024", "DOM", "DOM.Iterable"],
+    "jsx": "react-jsx",
+    "types": ["vite/client"],
+    "composite": true,
+    "outDir": "out/.types/web"
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx", "shared/**/*.ts", "electron/preload/api.d.ts"]
+}

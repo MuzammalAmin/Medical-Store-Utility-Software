@@ -1,0 +1,29 @@
+node_modules/
+out/
+dist/
+coverage/
+*.log
+.DS_Store
+Thumbs.db
+
+# Local databases, keys and backups must never be committed
+*.db
+*.db-wal
+*.db-shm
+*.sqlite
+*.keystore
+*.apbak
+
+# Editor
+.vscode/*
+!.vscode/extensions.json
+.idea/
+test-results/
+playwright-report/
+
+# Local test data for `npm run dev`
+.dev-data/
+
+# Separate clone of the GitHub repo (not part of the project)
+Medical Store Utility Software/
+node_modules

@@ -1,0 +1,49 @@
+﻿brand_name,generic_name,strength,form,company,category,barcode,rack,tabs_per_strip,strips_per_box,sale_price_box,gst_mode,gst_rate,reorder_level,rx_required,batch_no,expiry,qty,qty_unit,cost_price_box
+Panadol,Paracetamol,500mg,tablet,Haleon,Analgesic,8961100000012,A1,10,20,360,price_only,0,5,no,PA271101,11/2027,12,box,300
+Panadol Extra,Paracetamol + Caffeine,500mg/65mg,tablet,Haleon,Analgesic,8961100000029,B2,10,10,320,price_only,0,4,no,PA270802,08/2027,8,box,265
+Calpol,Paracetamol,120mg/5ml,syrup,Haleon,Analgesic,8961100000036,C3,1,1,145,price_only,0,10,no,CA270503,05/2027,24,box,118
+Brufen,Ibuprofen,400mg,tablet,Abbott,NSAID,8961100000043,D4,10,3,125,price_only,0,6,no,BR280304,03/2028,20,box,101
+Ponstan,Mefenamic Acid,250mg,capsule,Pfizer,NSAID,8961100000050,E5,10,10,290,add_gst,18,3,no,PO271205,12/2027,6,box,230
+Disprin,Aspirin,300mg,tablet,Reckitt,Analgesic,8961100000067,F6,10,10,210,price_only,18,4,no,DI270606,06/2027,10,box,170
+Arinac,Ibuprofen + Pseudoephedrine,200mg/30mg,tablet,Abbott,Cold & Flu,8961100000074,A7,10,2,120,price_only,0,5,no,AR270107,01/2027,15,box,96
+Augmentin,Amoxicillin + Clavulanic Acid,625mg,tablet,Haleon,Antibiotic,8961100000081,B8,6,1,520,add_gst,18,5,yes,AU261208,12/2026,10,box,430
+Augmentin,Amoxicillin + Clavulanic Acid,1g,tablet,Haleon,Antibiotic,8961100000098,C1,6,1,690,add_gst,18,3,yes,AU270209,02/2027,6,box,570
+Velosef,Cefradine,500mg,capsule,Haleon,Antibiotic,8961100000104,D2,12,1,640,price_only,0,3,yes,VE270910,09/2027,5,box,520
+Klaricid,Clarithromycin,500mg,tablet,Abbott,Antibiotic,8961100000111,E3,10,1,1150,price_only,0,2,yes,KL280411,04/2028,4,box,950
+Azomax,Azithromycin,500mg,tablet,Novartis,Antibiotic,8961100000128,F4,6,1,495,price_only,0,4,yes,AZ271012,10/2027,8,box,405
+Ciproxin,Ciprofloxacin,500mg,tablet,Bayer,Antibiotic,8961100000135,A5,10,1,610,price_only,0,3,yes,CI270713,07/2027,6,box,500
+Flagyl,Metronidazole,400mg,tablet,Sanofi,Antibiotic,8961100000142,B6,10,20,680,price_only,0,3,yes,FL261114,11/2026,4,box,560
+Flagyl,Metronidazole,200mg/5ml,suspension,Sanofi,Antibiotic,8961100000159,C7,1,1,130,price_only,0,6,yes,FL270315,03/2027,12,box,105
+Cefspan,Cefixime,400mg,capsule,Barrett Hodgson,Antibiotic,8961100000166,D8,5,1,720,add_gst,18,3,yes,CE280516,05/2028,5,box,595
+Risek,Omeprazole,20mg,capsule,Getz Pharma,Antacid / PPI,8961100000173,E1,14,1,395,price_only,0,6,no,RI280817,08/2028,15,box,320
+Risek,Omeprazole,40mg,capsule,Getz Pharma,Antacid / PPI,8961100000180,F2,14,1,560,price_only,0,4,no,RI280618,06/2028,10,box,460
+Nexum,Esomeprazole,40mg,tablet,Getz Pharma,Antacid / PPI,8961100000197,A3,14,1,610,price_only,0,4,no,NE280219,02/2028,10,box,500
+Motilium,Domperidone,10mg,tablet,Johnson & Johnson,Antiemetic,8961100000203,B4,10,5,330,price_only,0,3,no,MO270920,09/2027,6,box,270
+Gravinate,Dimenhydrinate,50mg,tablet,Searle,Antiemetic,8961100000210,C5,10,10,260,price_only,0,3,no,GR261221,12/2026,8,box,210
+Imodium,Loperamide,2mg,capsule,Johnson & Johnson,Antidiarrhoeal,8961100000227,D6,6,1,140,price_only,18,4,no,IM280122,01/2028,10,box,112
+ORS Plus,Oral Rehydration Salts,20.5g,sachet,Searle,Rehydration,8961100000234,E7,1,20,400,price_only,0,3,no,OR280723,07/2028,6,box,320
+Rigix,Cetirizine,10mg,tablet,Getz Pharma,Antihistamine,8961100000241,F8,10,1,95,price_only,0,8,no,RI281024,10/2028,30,box,76
+Softin,Loratadine,10mg,tablet,Hilton Pharma,Antihistamine,8961100000258,A1,10,1,140,price_only,0,5,no,SO270425,04/2027,12,box,112
+Hydryllin,Diphenhydramine + Ammonium Chloride,120ml,syrup,Searle,Cough & Cold,8961100000265,B2,1,1,165,price_only,0,8,no,HY271126,11/2027,20,box,132
+Myteka,Montelukast,10mg,tablet,Hilton Pharma,Respiratory,8961100000272,C3,14,1,540,price_only,0,4,yes,MY280327,03/2028,10,box,440
+Ventolin,Salbutamol,100mcg,inhaler,Haleon,Respiratory,8961100000289,D4,1,1,410,add_gst,18,4,yes,VE280628,06/2028,8,box,340
+Glucophage,Metformin,500mg,tablet,Merck,Diabetes,8961100000296,E5,10,5,165,price_only,0,6,yes,GL280929,09/2028,20,box,132
+Glucophage,Metformin,850mg,tablet,Merck,Diabetes,8961100000302,F6,10,5,230,price_only,0,5,yes,GL280830,08/2028,15,box,185
+Getryl,Glimepiride,2mg,tablet,Getz Pharma,Diabetes,8961100000319,A7,10,2,340,price_only,0,4,yes,GE280531,05/2028,10,box,275
+Concor,Bisoprolol,5mg,tablet,Merck,Cardiac,8961100000326,B8,10,3,395,price_only,0,4,yes,CO271232,12/2027,8,box,320
+Norvasc,Amlodipine,5mg,tablet,Pfizer,Cardiac,8961100000333,C1,10,2,610,price_only,0,3,yes,NO271033,10/2027,6,box,495
+Lipiget,Atorvastatin,10mg,tablet,Getz Pharma,Cardiac,8961100000340,D2,10,1,380,price_only,0,4,yes,LI280734,07/2028,10,box,305
+Loprin,Aspirin,75mg,tablet,Highnoon,Cardiac,8961100000357,E3,10,3,95,price_only,0,6,no,LO280235,02/2028,15,box,76
+Surbex-Z,Multivitamin + Zinc,,tablet,Abbott,Vitamins,8961100000364,F4,10,3,520,add_gst,18,4,no,SU270636,06/2027,10,box,420
+Cac-1000 Plus,Calcium + Vitamin C,,tablet,Haleon,Vitamins,8961100000371,A5,10,1,380,add_gst,18,5,no,CA280137,01/2028,12,box,305
+Neurobion,Vitamin B1 + B6 + B12,,tablet,P&G Health,Vitamins,8961100000388,B6,10,3,280,add_gst,18,4,no,NE270938,09/2027,10,box,225
+Polyfax,Polymyxin B + Bacitracin,20g,ointment,Haleon,Dermatology,8961100000395,C7,1,1,260,price_only,0,4,no,PO280439,04/2028,10,box,210
+Betnovate,Betamethasone,0.1% 20g,cream,Haleon,Dermatology,8961100000401,D8,1,1,175,price_only,0,4,yes,BE271140,11/2027,8,box,140
+Canesten,Clotrimazole,1% 20g,cream,Bayer,Dermatology,8961100000418,E1,1,1,330,add_gst,18,3,no,CA270841,08/2027,6,box,265
+Otosporin,Polymyxin B + Neomycin + Hydrocortisone,5ml,drops,Haleon,ENT,8961100000425,F2,1,1,230,price_only,0,3,yes,OT261242,12/2026,6,box,185
+Tobradex,Tobramycin + Dexamethasone,5ml,drops,Novartis,Eye,8961100000432,A3,1,1,520,price_only,0,2,yes,TO270543,05/2027,4,box,420
+Dexa,Dexamethasone,4mg/ml,injection,Hilton Pharma,Injection,8961100000449,B4,1,25,450,price_only,0,2,yes,DE271044,10/2027,3,box,360
+Xylocaine,Lidocaine,2% 20ml,injection,Aspen,Injection,8961100000456,C5,1,1,160,price_only,0,3,yes,XY280645,06/2028,6,box,128
+Dettol Antiseptic,Chloroxylenol,250ml,other,Reckitt,First Aid,8961100000463,D6,1,1,420,add_gst,18,4,no,DE291246,12/2029,10,box,345
+Band-Aid Strips,,100 pcs,other,Johnson & Johnson,First Aid,8961100000470,E7,1,1,650,add_gst,18,2,no,BA301247,12/2030,4,box,520
+Telfast,Fexofenadine,120mg,tablet,Sanofi,Antihistamine,8961100000487,F8,10,1,520,price_only,0,3,no,TE270348,03/2027,6,box,420
