@@ -35,7 +35,7 @@
 
 **You need:** a Windows 10 or 11 computer (4 GB RAM is enough), an 80mm thermal receipt printer, and optionally a USB barcode scanner. No internet connection is needed.
 
-1. Run **`Ayyaz-Pharmacy-Setup-1.0.0.exe`**.
+1. Download this project (green **Code** button → **Download ZIP**), extract it, open the **`installer`** folder and run **`Ayyaz-Pharmacy-Setup-1.0.0.exe`**.
 2. Windows may show _"Windows protected your PC"_, because the app isn't signed with a paid certificate yet. Click **More info → Run anyway**.
 3. Choose where to install (the default is fine) and finish. A shortcut called **Ayyaz Pharmacy** is added to the desktop and the Start menu.
 

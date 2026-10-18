@@ -13,8 +13,10 @@ How to build, test and change the app. For how to _use_ it, see the [user guide]
 ## Getting started
 
 ```bash
-npm install
-npm run dev          # start the app with hot reload
+npm ci --ignore-scripts               # skip the SQLite driver's node-gyp build (see notes)
+node node_modules/electron/install.js
+node node_modules/esbuild/install.js
+npm run dev                           # start the app with hot reload
 ```
 
 On first start the app asks for the shop details and an owner account, then shows the **recovery key**.
@@ -30,7 +32,7 @@ AYYAZ_USER_DATA=./.dev-data npm run dev    # Git Bash
 | ------------------------------------------------------- | ---------------------------------------------------------------------- |
 | `npm run dev`                                           | Run the app in development mode                                        |
 | `npm run build`                                         | Type-check and build into `out/`                                       |
-| `npm run dist`                                          | Build the Windows installer into `dist/`                               |
+| `npm run dist`                                          | Build the Windows installer into `dist/` (copy it to `installer/`)     |
 | `npm test`                                              | Unit and integration tests (Vitest)                                    |
 | `npm run test:e2e`                                      | Build, then drive the real app with Playwright                         |
 | `npm run lint` / `npm run typecheck` / `npm run format` | Code quality checks                                                    |
@@ -78,7 +80,10 @@ tests/e2e/       Playwright tests that run the built app
 - **Running from VS Code's extension host:** some tools inherit `ELECTRON_RUN_AS_NODE=1`, which starts Electron as
   plain Node (`does not provide an export named 'BrowserWindow'`). Unset it before launching. The e2e helper already
   does this.
-- **Install scripts:** npm 11 asks before running package install scripts. The SQLite driver's `node-gyp` script is
-  intentionally _not_ approved, because the bundled prebuilt binary is used instead.
+- **Install scripts:** the SQLite driver contains a `binding.gyp`, so a plain `npm install` tries to compile it with
+  `node-gyp` and fails without Visual Studio. It doesn't need compiling (the bundled prebuilt binary is used), so
+  install with `--ignore-scripts` and run the Electron and esbuild install scripts by hand, as shown above.
+- **Installer size:** the committed `installer/` exe must stay under GitHub's 100 MB file limit. `electron-builder.yml`
+  and `build/after-pack.cjs` trim unused files to keep it there (about 94 MB).
 - **Known audit warnings:** `npm audit` reports moderate issues in build tools only (drizzle-kit's dev server and
   electron-builder dependencies). None of them ship inside the app.

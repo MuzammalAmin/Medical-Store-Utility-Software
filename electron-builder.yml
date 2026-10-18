@@ -11,6 +11,19 @@ files:
   - out/**
   - package.json
   - '!**/*.map'
+  # Only the Windows x64 SQLite binary is needed; drop the C sources and other platforms.
+  - '!node_modules/better-sqlite3/{deps,src}/**'
+  - '!node_modules/better-sqlite3/prebuilds/{darwin,linux,linuxmusl}-*.node'
+  - '!node_modules/better-sqlite3/prebuilds/win32-arm64.node'
+  # Type definitions, TypeScript sources, docs and exceljs's browser bundle are never loaded at runtime.
+  - '!node_modules/**/*.{ts,mts,cts,map,md}'
+  - '!node_modules/exceljs/dist/**'
+
+# Keeps the installer under GitHub's 100 MB file limit so it can live in the repo.
+compression: maximum
+electronLanguages:
+  - en-US
+afterPack: build/after-pack.cjs
 
 # SQL migrations are applied at start-up from resources/migrations.
 extraResources:
